@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joe's Movie List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #e50914;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    section {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .movies {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .movie {
+      background: #222;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      transition: transform 0.2s;
+    }
+    .movie:hover {
+      transform: scale(1.05);
+    }
+    .movie img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .movie h3 {
+      margin: 10px 0;
+    }
+    .rating {
+      color: gold;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Joe's Watched Movies</h1>
+    <p>A collection of films I've enjoyed</p>
+  </header>
+
+  <section>
+    <div class="movies">
+      <div class="movie">
+        <img src="https://via.placeholder.com/200x300" alt="Movie Poster">
+        <h3>Inception</h3>
+        <p class="rating">⭐ 9/10</p>
+      </div>
+      <div class="movie">
+        <img src="https://via.placeholder.com/200x300" alt="Movie Poster">
+        <h3>Interstellar</h3>
+        <p class="rating">⭐ 8.5/10</p>
+      </div>
+      <div class="movie">
+        <img src="https://via.placeholder.com/200x300" alt="Movie Poster">
+        <h3>The Dark Knight</h3>
+        <p class="rating">⭐ 9.5/10</p>
+      </div>
+      <div class="movie">
+        <img src="https://via.placeholder.com/200x300" alt="Movie Poster">
+        <h3>Avengers: Endgame</h3>
+        <p class="rating">⭐ 8/10</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
